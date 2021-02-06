@@ -1,0 +1,46 @@
+.connect {
+    background: $blackClr;
+
+    &__social {
+        text-align: center;
+        color: $orangeClr;
+
+        @include breakpoint-down(medium) {
+            padding: 100px 40px;
+        }
+
+        @include breakpoint-up(medium) {
+            padding: 100px 40px;
+        }
+
+    }
+
+    &__title {
+
+    }
+
+    &__subtitle {
+        font-family: 'Open Sans', sans-serif;
+        margin-top: 5px;
+        margin-bottom: 25px;
+
+    }
+
+    &__media {
+        > a {
+            &:not(:last-child) {
+                margin-right: 20px;
+            }
+        }
+    }
+
+    &__link {
+        font-size: 3rem;
+        color: $whiteClr;
+        transition: all 0.2s ease-in-out;
+
+        &:hover, &:focus, &:active {
+            color: $orangeClr;
+        }
+    }
+}

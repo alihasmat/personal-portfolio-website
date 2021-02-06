@@ -1,0 +1,36 @@
+.icon {
+    height: 50px;
+    cursor: pointer;
+    vertical-align: middle;
+    
+    path {
+      fill: none;
+      stroke-width: 40px;
+      stroke-linecap: round;
+      stroke: $whiteClr;
+      stroke-dashoffset: 0px;
+      transition: stroke-dashoffset .5s cubic-bezier(0.250,-0.250, 0.750, 1.250), stroke-dasharray .5s cubic-bezier(0.250,-0.250, 0.750, 1.250);
+    }
+    
+    #top, #bottom {
+      stroke-dasharray: 240px 950px;
+    }
+    
+    #middle {
+      stroke-dasharray: 240px 240px
+    }
+    
+  }
+
+.cross {
+
+    #top, #bottom {
+        stroke-dashoffset: -650px;
+        stroke-dashoffset: -650px;
+    }
+
+    #middle {
+        stroke-dashoffset: -115px;
+        stroke-dasharray: 1px 220px;
+    }
+}

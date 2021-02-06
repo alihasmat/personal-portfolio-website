@@ -1,0 +1,54 @@
+.profile {
+    &__detail {
+        position: absolute;
+        z-index: 3;
+        left: 50%;
+        transform: translateX(-50%);
+        display: block;
+        text-align: center;
+        top: 50%;
+        margin-top: -180px;
+        width: 100%;
+    }
+
+    &__image {
+        max-width: 200px;
+        width: 45%;
+    }
+
+    &__heading {
+        font-family: 'Poppins', sans-serif;
+        color: $whiteClr;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-weight: 700;
+    }
+
+    &__subheading {
+        font-family: 'Open Sans', sans-serif;
+        color: $whiteClr;
+        font-weight: 400;
+        margin: 0;
+
+        &__cursor {
+            display: inline-block;
+            width: 2px;
+            background: $whiteClr;
+            animation: blink 1s infinite;
+        }
+
+        &__typing {
+            animation: none;
+        }
+
+        @keyframes blink {
+            0% { background-color: $whiteClr; }
+            49% { background-color: $whiteClr; }
+            50% { background-color: transparent; }
+            99% { background-color: transparent; }
+            100% { background-color: $whiteClr; }
+        }
+    }
+
+    
+}

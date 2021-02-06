@@ -1,0 +1,112 @@
+.portfolio {
+    text-align: center;
+
+    @include breakpoint-down(medium) {
+        padding: 100px 40px;
+    }
+
+    @include breakpoint-up(medium) {
+        padding: 100px 40px;
+    }
+
+    &__title {
+        margin-bottom: 20px;
+    }
+
+    &__buttons {
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        > button {
+            border: none;
+            padding: 20px;
+            margin-bottom: 20px;
+            cursor: pointer;
+
+            &:not(:last-child) {
+                margin-right: 20px;
+            }
+        }
+
+        &__active {
+            background-color: $orangeClr;
+            color: $whiteClr;
+        }
+        
+        &__all {
+
+        }
+
+        &__movies {
+
+        }
+
+        &__plays {
+
+        }
+    }
+
+    &__images {
+        display: grid;
+        grid-gap: 10px;
+
+        @include breakpoint-up(medium) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include breakpoint-down(small) {
+            grid-template-columns: 1fr;
+        }
+
+        @include breakpoint-up(large) {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        &__links {
+            position: relative;
+            display: block;
+            background-color: lightgrey;
+        }
+
+        &__hover {
+            background: rgba(33, 33, 33, 0.5);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: all ease .5s;
+            
+
+            &:hover {
+                opacity: 1;
+                
+            }
+
+            &__content {
+                display: flex;
+                width: 100%;
+                height: 100%;
+                justify-content: center;
+                align-items: center;
+                
+                i {
+                    margin-right: 10px;
+                    color: $whiteClr;
+                    padding: 10px;
+                    background: $orangeClr;
+                    cursor: pointer;
+                }
+            }
+
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+    }
+}

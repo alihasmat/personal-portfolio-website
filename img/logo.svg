@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 116 43">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e23c0a;
+        font-size: 35px;
+        font-family: RaizenAnthemRegular, Raizen Anthem;
+      }
+    </style>
+  </defs>
+  <text id="John_Doe" data-name="John Doe" class="cls-1" transform="translate(58 30)"><tspan x="-54.583" y="0">John Doe</tspan></text>
+</svg>

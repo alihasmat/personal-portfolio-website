@@ -1,0 +1,23 @@
+.footer {
+    background-color: $orangeClr;
+    text-align: center;
+
+    @include breakpoint-down(medium) {
+        padding: 80px 40px;
+    }
+
+    @include breakpoint-up(medium) {
+        padding: 100px 40px;
+    }
+
+    &__copyright {
+        margin-bottom: 20px;
+        font-weight: 500;
+        font-size: 1.2rem;
+
+    }
+
+    &__subtitle {
+        font-family: 'Open Sans', sans-serif;
+    }
+}

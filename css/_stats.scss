@@ -1,0 +1,67 @@
+.stats {
+    display: grid;
+
+    @include breakpoint-down(medium) {
+        padding: 130px 40px;
+    }
+
+    @include breakpoint-up(medium) {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 75px;
+        padding: 155px 40px;
+    }
+
+    @include breakpoint-up(large) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 60px;
+    }
+
+    &__outer {
+        border: 2px solid $orangeClr;
+        text-align: center;
+
+        @include breakpoint-down(medium) {
+            padding: 20px;
+
+            &:not(:last-child) {
+                margin-bottom: 80px;
+            }
+
+        }
+
+        @include breakpoint-up(medium) {
+
+            &:not(:last-child) {
+                margin: 0;
+            }
+        }
+    }
+
+    &__svg {
+        position: relative;
+        position: relative;
+        display: inline-block;
+        margin: -52px 25px 0 25px;
+        width: 90px;
+        background: white;
+    }
+
+    &__icon {
+        width: 70px;
+
+        &__width {
+            width: 57px;
+        }
+    }
+
+    &__title {
+        font-size: 2.5rem;
+        font-weight: 500;
+        margin-top: 15px;
+    }
+
+    &__subtitle {
+        font-family: 'Open Sans', sans-serif;
+        margin: 0 0 20px 0;
+    }
+}

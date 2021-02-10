@@ -43,6 +43,8 @@
             font-weight: 600;
             cursor: pointer;
             z-index: 99999;
+            display: grid;
+            place-content: center center;
 
             > i {
                 text-align: center;

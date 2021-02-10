@@ -328,6 +328,9 @@ a, a:visited, a:hover {
   font-weight: 600;
   cursor: pointer;
   z-index: 99999;
+  display: -ms-grid;
+  display: grid;
+  place-content: center center;
 }
 
 .carousel__actions > button > i {
@@ -394,7 +397,7 @@ a, a:visited, a:hover {
 
 .profile__subheading {
   font-family: 'Open Sans', sans-serif;
-  color: white;
+  color: #e23c0a;
   font-weight: 400;
   margin: 0;
 }
@@ -482,6 +485,7 @@ a, a:visited, a:hover {
 
 .about__text__heading {
   margin-top: 30px;
+  color: #e23c0a;
 }
 
 .about__text__detail {
@@ -698,6 +702,7 @@ a, a:visited, a:hover {
 
 .portfolio__title {
   margin-bottom: 20px;
+  color: #e23c0a;
 }
 
 .portfolio__buttons {
